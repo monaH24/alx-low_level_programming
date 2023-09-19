@@ -1,11 +1,18 @@
 #include "holberton.h"
-/**
- * set_string - function that  sets the value of a pointer to a char.
- *@s: first value -char
- *@to: second value -int
- */
-void set_string(char **s, char *to)
-{
+#include <stdio.h>
 
-	*s = to;
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char *s0 = "Anne Cognet";
+    char *s1 = "Asaia Palacios";
+
+    printf("%s, %s\n", s0, s1);
+    set_string(&s1, s0);
+    printf("%s, %s\n", s0, s1);
+    return (0);
 }
